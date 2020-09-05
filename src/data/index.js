@@ -1,13 +1,6 @@
 const elastic = require("../elastic");
 const states  = require("./states.json");
 
-/**
- * @function createESAction
- * @returns {{index: { _index: string, _type: string }}}
- * @description Returns an ElasticSearch Action in order to
- *              correctly index documents.
- */
-
 const esAction = {
     index: {
         _index: elastic.index,
